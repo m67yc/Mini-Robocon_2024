@@ -14,8 +14,8 @@ void loop(){
     
     // joystick.setDeadZoneX();
     // joystick.setDeadZoneY();
-    // joystick.showRawValue();
-    // joystick.showMapValue();
-    // Serial.println();
+    joystick.showRawValue();
+    joystick.showMapValue();
+    Serial.println();
 
 }
