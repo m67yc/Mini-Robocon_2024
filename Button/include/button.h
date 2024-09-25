@@ -10,5 +10,7 @@ class Button{
     public:
         Button(const uint8_t pin_button);
         bool readValue();
+        uint16_t getSpeedValue(uint16_t speed, uint8_t mode);
+        //...
 
 };
