@@ -13,11 +13,11 @@ bool Button::readValue(){
 
 }
 
-uint16_t setSpeedValue(uint16_t speed, uint8_t mode){
+uint16_t Button::setSpeedValue(uint16_t speed, uint8_t mode){
 
     m_speed = speed;
     m_mode = mode;
-    if(mode == 2){
+    if(m_mode == 2){
         m_speed += 50;
     }
     else if(mode == 0){
@@ -28,11 +28,11 @@ uint16_t setSpeedValue(uint16_t speed, uint8_t mode){
 
 }
 
-uint8_t setDirectionValue(uint8_t direction, uint8_t mode){
+uint8_t Button::setDirectionValue(uint8_t direction, uint8_t mode){
 
     m_direction = direction;
     m_mode = mode;
-    if(mode == 2){
+    if(m_mode == 2){
         m_direction += 1;
     }
     else if(mode == 0){
