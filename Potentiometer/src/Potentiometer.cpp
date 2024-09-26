@@ -21,6 +21,6 @@ uint8_t Potentiometer::getMoterMap(){
 
 uint8_t Potentiometer::getSwitchMap(){
 
-    return map(getValue(), 0 ,1024, 0 ,3);
+    return map(getValue(), 0 ,1024, 0 ,2);
 
 }
