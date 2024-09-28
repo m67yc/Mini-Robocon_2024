@@ -21,6 +21,14 @@ uint8_t Potentiometer::getMoterMap(){
 
 uint8_t Potentiometer::getSwitchMap(){
 
-    return map(getValue(), 0 ,1024, 0 ,2);
+    if(getValue() >= 682){
+        return 1;
+    }
+    else if(getValue() >= 341){
+        return 2;
+    }
+    else{
+        return 0;
+    }
 
 }
